@@ -1,0 +1,196 @@
+@import "../css-config/mixins.scss";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+ }
+
+.main-container{
+    width: 100%;
+    background-color: rgb(54 246 7);; 
+    height: 100%;
+    margin: 0;
+    
+    .hero-banner{
+        height: 600px;
+     background-color: rgb(54 246 7);;
+       background-image: url("../assets/bg8.png");
+       border: 1px solid #000;
+       background-repeat: no-repeat;
+  
+       background-size: 476px 337px;
+       background-position: -93px 273px;
+        position: relative;
+        top: -21px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include sm{
+            background-size: 676px 485px;
+            background-position: 689px 51px;  
+        }
+.heading{
+    font-family: 'Caprasimo', cursive;
+    left: -9px;
+    position: relative;
+    span{
+        color: #993e5e;
+    }
+    @include sm{
+        left: -492px;
+    }
+    h2{
+        color: #993e5e;
+        font-weight: 900;
+        font-size: 34px;
+        left: 32px;
+    position: relative;
+        @include sm{
+            font-size: 40px;
+            left: 0px;
+        }
+    }
+    h4{
+        font-size: 16px;
+        color: rgb(61 61 61);
+        font-weight: 700;
+        @include sm{
+            font-size: 30px;
+        }
+    }
+}
+    }
+    .quiz-section{
+        background-image: url("../assets/bg4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0px 0px;
+    top: -22px;
+    position: relative;
+height: 414px;
+        .card-qs{
+    
+    
+
+        
+        height: 125px;
+        width: 100%;
+        .card-body-qs{
+            width: 100%; 
+            display: flex;
+            justify-content: center;
+            height: 500px;
+            font-family: 'Belanosima', sans-serif;
+            top: 47px;
+            position: relative;
+            .h5-text{
+                border: 2px solid rgb(248, 244, 14);
+                background-color: rgb(255 209 1);
+                padding: 13px 43px;
+                border-radius: 10px;
+                color: rgb(5, 4, 4);
+                font-size: 16px;
+              
+                @include sm{
+                    font-size:25px ;
+                }
+
+            } 
+
+        }
+    }
+    .card-as{
+        height: 66px;
+       
+        .card-body-as{
+            display: flex;
+    
+            justify-content: center;
+            top: 66px;
+            @include sm{
+                top: 86px;
+            }
+            .ans-h5{
+                font-size: 13px;
+                @include sm{
+font-size: 20px;
+                }
+            }
+
+    position: relative;
+    .btn-o{
+        width: 137px;
+    }
+            .answer-section{
+              
+               
+         
+                .correct{
+                 background-color: green;
+                }
+             }
+        }
+        
+    }
+   .card-bt{
+    .card-body-bt{
+        display: flex;
+        justify-content: center;
+        top: 138px;
+        position: relative;
+        .btn{
+            width: 100px;
+        }
+    }
+   }
+    }
+
+}
+
+
+@media (max-width: 768px) {
+    // Styles for screens smaller than or equal to 768px
+    .hero-banner {
+        height: 200px;
+        width: 100%;
+    }
+
+   .actions{
+    top: 21px;
+    position: relative;
+   }
+   .answer-section{
+display: flex;
+flex-wrap: wrap;
+
+
+   
+   }
+   .btn{
+    width: 125px;
+   }
+   
+   .heading{
+    font-family: 'Caprasimo', cursive;
+    left: -100px;
+    position: relative;
+}
+    .heading-h2{
+        color: rgb(0, 0, 0);
+        font-weight: 900;
+        font-size: 20px;
+    }
+    .heading-h4{
+        font-size: 10px;
+        color: rgb(0, 0, 0);
+        font-weight: 500;
+    }
+
+  
+   
+  
+}

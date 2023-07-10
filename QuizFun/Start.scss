@@ -1,0 +1,36 @@
+
+
+.main-container-start{
+
+    width: 1440px;
+    height: 1024px;
+    display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+.start-heading img{
+    left: 595px;
+    position: absolute;
+    height: 112px;
+    width: 229px;
+    top: 368px;
+
+}
+    .btn{
+        width: 173px;
+        height: 49px;
+        flex-shrink: 0;
+        
+        border-radius: 9px;
+        background: #01AB08;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Caprasimo', cursive;
+      
+      
+        }
+
+
+
+}

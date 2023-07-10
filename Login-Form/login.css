@@ -1,0 +1,154 @@
+.container{
+    width: 100%;
+    height: 100%;
+}
+.main-container{
+    height: 600px; /* Adjust the height as needed */
+    background: linear-gradient(to right, #EBEFFF 80%, #656ED3 20%);
+position: relative;
+top: 39px;
+left: 81px;
+width: 87%;
+
+}
+.img img{
+    position: relative;
+  
+    top: 0px;
+    left: 882px;
+    height: 47%;
+    width: 34%;
+}
+.input-section{
+    position: relative;
+    top: -408px;
+    left: 77px;
+   
+  
+}
+.login-form #email_err,
+.login-form #pass_err{
+    border: 1px solid #ff5c5c;
+    border-radius: 3px;
+    text-align: center;
+    padding: 5px 8px;
+    margin-top: 9px;
+    width: 300px;
+    font-size: 12px;
+    display: none;
+}
+.inputs p{
+    font-family: Inter;
+}
+.input-section h4{
+    color: #1A1A1A;
+font-size: 16px;
+font-family: Inter;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+left: 0px;
+position: relative;
+
+}
+.corner img{
+    width: 11%;
+    position: relative;
+    top: -279px;
+    filter: brightness(88%);
+}
+.abc{
+border-radius: 10px;
+width: 300px;
+height: 26px;
+background-color: #EBEFFF;
+text-align: center;
+    font-size: 16px;
+border: 1px solid #656ED3; 
+/* border: 1px solid #EBEFFF; */
+}
+.btn{
+    position: relative;
+    top: 5px;
+
+}
+.other-acc img{
+    position: relative;
+    top: -355px;
+    left: 171px;
+}
+.other-acc h5{
+    position: relative;
+    top: -355px;
+    left: 122px;
+}
+/* .inputs input{
+    border: 1px solid #EBEFFF;
+} */
+.btn button{
+    background-color: #656ED3;
+    border-radius: 50px;
+    position: relative;
+    top: 38px;
+    border: 1px solid #656ED3;
+    width: 312px;
+    height: 31px;
+    color: white;
+    transition: transform 0.3s ease-in-out;
+}
+
+.btn button:hover{
+    background: #2a2e5b;
+    transform: translateY(-10px)
+}
+
+
+/* Responsive styles for mobile */
+@media only screen and (max-width: 480px) {
+    .main-container {
+      height: 634px;
+      top: 0;
+      left: 0;
+      padding: 20px;
+      width: 242px;
+    }
+  
+    .img img {
+      position: relative;
+      top: 0;
+      left: -25px;
+      width: 88%;
+      height: auto;
+    }
+  
+    .input-section {
+      position: relative;
+      top: 0;
+      left: 0;
+    }
+    .other-acc img{
+        position: relative;
+        top: 48px;
+        left: 51px;
+    }
+    .abc{
+       font-size: 12px;
+       height: 26px;
+       width: 187px;
+    }
+    .btn button{
+        width: 192px;
+    }
+    .corner img{
+        width: 22%;
+        position: relative;
+        left: -19px;
+        top: 73px;
+    }
+    .other-acc h5{
+        position: relative;
+        top: 41px;
+        left: 5px;
+    }
+  }
+  

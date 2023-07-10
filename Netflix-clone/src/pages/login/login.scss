@@ -1,0 +1,122 @@
+@import "../../css-config/mixins.scss";
+.login {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 1) 100%
+      ),
+      url("https://help.nflxext.com/0af6ce3e-b27a-4722-a5f0-e32af4df3045_what_is_netflix_5_en.png");
+    background-size: cover;
+    position: relative;
+    @include sm{
+      height: 100vh;
+    }
+  
+    .top {
+      .wrapper {
+        padding: 20px 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+  
+        .logo {
+          height: 40px;
+        }
+      }
+    }
+  
+    .container {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      @include sm{
+        top: 0;
+      }
+  
+      form {
+        width: 208px;
+        height: 300px;
+        padding: 30px;
+        border-radius: 5px;
+        background-color: var(--main-color);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        @include sm{
+          width: 300px;
+        height: 300px;
+        padding: 30p
+        }
+       #hhh{
+        color: #ffffff;
+        text-decoration: none;
+        &:hover{
+         text-decoration: underline;
+        }
+
+       }
+        input {
+          height: 40px;
+          border-radius: 5px;
+          background-color: gray;
+          color: white;
+          padding-left: 10px;
+  
+          &::placeholder {
+            color: lightgray;
+          }
+        }
+  
+        button {
+          height: 40px;
+          border-radius: 5px;
+          background-color: #C13E31;
+          color: white;
+          border: none;
+          font-size: 18px;
+          font-weight: 500;
+          cursor: pointer;
+        }
+  
+        span {
+          color: lightgray;
+          b {
+            color: white;
+          }
+        }
+      }
+      #hhhh{
+        color: rgb(0, 0, 255);
+        text-decoration: none;
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    /* Styles for mobile devices */
+    .container {
+      form {
+        width: 90%;
+        height: auto;
+        padding: 20px;
+      }
+    }
+  }
+
+  @media (min-width: 769px) and (max-width: 1024px) {
+    /* Styles for iPad devices */
+    .container {
+      form {
+        width: 500px;
+      }
+    }
+  }

@@ -1,0 +1,141 @@
+@import "../../css-config/mixins.scss";
+.register {
+  width: 571px;
+  height: 247vh;
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 1) 100%
+      ),
+      url("https://images.unsplash.com/photo-1621955964441-c173e01c135b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1186&q=80");
+    background-size: cover;
+    position: relative;
+    @include sm{
+      width: 100vw;
+      height: 100vh;
+    }
+  
+    .top {
+      .wrapper {
+        padding: 20px 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+  
+        .logo {
+          height: 40px;
+        }
+  
+        .loginButton {
+          background-color: #C13E31;
+          border: none;
+          color: white;
+          border-radius: 5px;
+          padding: 9px 16px;
+          font-size: 16px;
+          font-weight: 500;
+        cursor: pointer;
+        &:hover{
+          cursor: pointer;
+          background-color: rgb(143, 60, 60);
+
+        }
+        }
+      }
+    }
+  
+    .container {
+      width: 100%;
+      height: 71%;
+      position: absolute;
+      top: 75px;
+      left: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: white;
+  @include sm{
+    left: 0;
+  }
+      h1 {
+        // width: 522px;
+        font-size: 41px;
+        // left: -157px;
+        // position: relative;
+        @include sm{
+          font-size: 50px;
+          
+         
+        }
+      }
+  
+      h2 {
+        margin: 20px 0px;
+        @include sm{
+          margin: 20px;
+
+        }
+      }
+  
+      p {
+        margin: 0px 0px;
+        font-size: 20px;
+        @include sm{
+          font-size: 20px;
+        }
+      }
+ 
+  
+      .input {
+        width: 50%;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 20px;
+        height: 50px;
+        border-radius: 5px;
+        @include sm{
+          width: 50%;
+        }
+  
+        input{
+            flex: 9;
+            height: 100%;
+            border: none;
+            text-align: center;
+            padding: 0px 178px;
+            @include sm{
+              
+            }
+            .error{
+              font-weight: bold;
+              font-size: 0.875rem;
+              color: #ff3300;
+              text-align: center;
+            }
+        }
+  
+       
+      }
+      .registerButton{
+        height: 22%;
+        width: 512px;
+       
+        margin-top: 27px;
+        background-color: #C13E31;
+        border: none;
+        color: white;
+        font-size: 22px;
+        cursor: pointer;
+        @include sm{
+          width: 512px;
+        }
+        &:hover{
+         background-color:  rgb(143, 60, 60);
+        }
+    }
+  }
+  }

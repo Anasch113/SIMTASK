@@ -1,0 +1,132 @@
+@import "../../css-config/mixins.scss";
+
+.featured {
+    height: 147vh;
+    position: relative;
+   
+ 
+  // background: linear-gradient(91deg, #000 20%, #6E211A  30.73%);
+  background-color: 181818;
+
+  
+  background: linear-gradient(to right, #1f1c18, #8e0e00);
+  @include sm{
+    height: 90vh;
+  }
+  
+  .h2-text{
+    width: 359px;
+    color: azure;
+    position: relative;
+    position: relative;
+    top: 120px;
+    font-weight: 900;
+    font-size: 44px;
+    left: 22px;
+    @include sm{
+    width: 518px;
+    top: 144px;
+    font-weight: 900;
+    font-size: 60px;
+    left: 65px;
+    }
+    span{
+      color: #C13E31;
+    }
+
+  }
+    .category {
+      position: absolute;
+      top: 80px;
+      left: 50px;
+      font-size: 30px;
+      font-weight: 500;
+      color: white;
+      display: flex;
+      align-items: center;
+      @include sm{
+        top: 80px;
+        left: 50px;
+        font-size: 30px;
+        font-weight: 500;
+      }
+  
+      select {
+        cursor: pointer;
+        background-color: var(--main-color);
+        border: 1px solid white;
+        color: white;
+        margin-left: 20px;
+        padding: 5px;
+      }
+      img {
+        width: 466px;
+        left: 558px;
+        position: relative;
+        top: -45px
+      }
+    }
+  
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      
+    }
+  
+    .info {
+      width: 35%;
+      position: absolute;
+      left: 50px;
+      bottom: 100px;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      @include sm{
+
+      }
+  
+      
+  
+      .desc {
+        margin: 20px 0px;
+        @include sm{
+          margin: 20px 0px;
+        }
+      }
+  
+      .buttons {
+        display: flex;
+  
+        button {
+          padding: 10px 20px;
+          border: none;
+          border-radius: 5px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 18px;
+          font-weight: 500;
+          margin-right: 10px;
+          cursor: pointer;
+          @include sm{
+
+          }
+  
+          &.play {
+            background-color: #C13E31;
+            color: var(--main-color);
+          }
+  
+          &.more {
+            background-color: gray;
+            color: white;
+          }
+  
+          span {
+            margin-left: 5px;
+          }
+        }
+      }
+    }
+  }
